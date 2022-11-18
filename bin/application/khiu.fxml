@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <Accordion layoutX="-280.0" layoutY="-193.0">
+        <panes>
+          <TitledPane animated="false" text="untitled 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="untitled 3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <AnchorPane layoutX="-91.0" layoutY="-110.0" prefHeight="310.0" prefWidth="434.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="132.0" layoutY="155.0" text="hughyguy" />
+            <TextField layoutX="217.0" layoutY="151.0" />
+            <Button layoutX="232.0" layoutY="239.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

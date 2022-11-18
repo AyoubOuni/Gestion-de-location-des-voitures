@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.inscription_car">
+   <children>
+      <ImageView fitHeight="312.0" fitWidth="595.0" layoutX="-175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Ayoub/FIA1/Systeme%20Embarque/projet/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="395.0" fitWidth="680.0" layoutX="-24.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Ayoub/FIA1/Systeme%20Embarque/projet/back.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff2a" height="62.0" layoutX="101.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Text layoutX="118.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Add new Car" wrappingWidth="174.30059814453125">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Label layoutX="62.0" layoutY="108.0" text="Marque" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="marque" layoutX="197.0" layoutY="115.0" prefHeight="30.0" prefWidth="150.0" promptText="marque de voiture" style="-fx-background-radius: 10;" AnchorPane.rightAnchor="44.599999999999994" />
+      <Label layoutX="63.0" layoutY="154.0" text="Modele" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modele" layoutX="197.0" layoutY="161.0" prefHeight="30.0" prefWidth="150.0" promptText="modele de voiture" style="-fx-background-radius: 10;" />
+      <Label layoutX="64.0" layoutY="199.0" prefHeight="46.0" prefWidth="99.0" text="Année" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="annee" layoutX="197.0" layoutY="207.0" prefHeight="30.0" prefWidth="150.0" promptText="année de voiture" style="-fx-background-radius: 10;" />
+      <Label layoutX="65.0" layoutY="255.0" text="N°immatricule" textFill="#28271d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="immat" layoutX="199.0" layoutY="254.0" prefHeight="30.0" prefWidth="62.0" promptText="immatriculde de voiture" style="-fx-background-radius: 10;" />
+      <Label layoutX="273.0" layoutY="252.0" text="تونس" textFill="#28271d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="immat1" layoutX="327.0" layoutY="254.0" prefHeight="30.0" prefWidth="62.0" promptText="immatriculde de voiture" style="-fx-background-radius: 10;" />
+      <Label layoutX="63.0" layoutY="289.0" text="Energie" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="essence" layoutX="190.0" layoutY="301.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" text="Essence">
+         <toggleGroup>
+            <ToggleGroup fx:id="energie" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="gazole" layoutX="292.0" layoutY="301.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" text="Gazole" toggleGroup="$energie">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="57.0" layoutY="333.0" prefHeight="46.0" prefWidth="86.0" text=" Boite" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="manuelle" layoutX="158.0" layoutY="345.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="103.0" text="Manuelle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="boite" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="auto" layoutX="261.0" layoutY="345.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="129.0" text="Automatique" toggleGroup="$boite">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="109.0" layoutY="379.0" prefHeight="46.0" prefWidth="239.0" text="Puissance fiscale" textFill="#28271d">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="77.0" layoutY="423.0" mnemonicParsing="false" text="4 CV">
+         <toggleGroup>
+            <ToggleGroup fx:id="puissance" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="149.0" layoutY="423.0" mnemonicParsing="false" text="5 CV" toggleGroup="$puissance" />
+      <RadioButton layoutX="219.0" layoutY="423.0" mnemonicParsing="false" text="6 CV" toggleGroup="$puissance" />
+      <RadioButton layoutX="294.0" layoutY="423.0" mnemonicParsing="false" text="7 CV" toggleGroup="$puissance" />
+      <Button layoutX="119.0" layoutY="484.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="68.0" text="Add">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="223.0" layoutY="484.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="68.0" text="Close">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

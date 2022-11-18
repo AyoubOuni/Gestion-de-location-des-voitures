@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="300.0" minWidth="500.0" prefHeight="315.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Connexion_admin">
+   <center>
+      <AnchorPane maxWidth="200.0" prefHeight="166.0" prefWidth="509.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="315.0" fitWidth="610.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Ayoub/FIA1/Systeme%20Embarque/projet/back.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="124.0" layoutY="116.0" text="Email" textFill="#28271d">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="170.0" text="Password" textFill="#28271d">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="271.0" layoutY="123.0" prefHeight="30.0" prefWidth="150.0" promptText="adresse email" style="-fx-background-radius: 10;" />
+            <PasswordField fx:id="motdepasse" layoutX="272.0" layoutY="177.0" prefHeight="29.0" prefWidth="150.0" promptText="mot de passe" style="-fx-background-radius: 10;" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff2a" height="62.0" layoutX="213.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="211.0" />
+            <Label layoutX="231.0" layoutY="29.0" text="Se connecter" textFill="#28271d">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="225.0" layoutY="249.0" mnemonicParsing="false" onAction="#show" prefHeight="28.0" prefWidth="75.0" text="Login" />
+            <Button layoutX="319.0" layoutY="249.0" mnemonicParsing="false" onAction="#close" prefHeight="28.0" prefWidth="75.0" text="Annuler" />
+           
+            <Text fx:id="R" layoutX="302.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.73675537109375">
+               <font>
+                  <Font size="19.0" />
+               </font></Text>
+            <CheckBox fx:id="ch" layoutX="446.0" layoutY="181.0" mnemonicParsing="false" onAction="#afficher" prefHeight="20.0" prefWidth="120.0" text="Show password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
